@@ -1,0 +1,14 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title class="title">Ingreso</mat-card-title>
+      </mat-card-header>
+            <app-login-alumno *ngIf="!checked"></app-login-alumno>
+            <app-login-admin *ngIf="checked"></app-login-admin>
+                <section class="example-section">
+                    <mat-checkbox class="example-margin" [(ngModel)]="checked">Soy Administrador</mat-checkbox>
+                </section>  
+    </mat-card>
+  
+</div>

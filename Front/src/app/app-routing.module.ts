@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 import { LoginAlumnoComponent } from './components/login-alumno/login-alumno.component';
-import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: 'Inicio' },
-  { path: "Inicio", component: InicioComponent, pathMatch: "full" },
+  { path: "", pathMatch: "full", redirectTo: 'login' },
   { path: "loginAdmin", component: LoginAdminComponent, pathMatch: "full" },
-  { path: "loginAlumno", component: LoginAlumnoComponent, pathMatch: "full" }
+  { path: "loginAlumno", component: LoginAlumnoComponent, pathMatch: "full" },
+  { path: "login", component: LoginComponent, pathMatch: "full" }
 
 ];
 
