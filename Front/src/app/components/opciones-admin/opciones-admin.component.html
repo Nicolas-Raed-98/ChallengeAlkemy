@@ -1,0 +1,26 @@
+<div style="height: 80vh;">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Alkemy</span>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+          <a href="#" mat-button>Profesores</a>
+          <a href="#" mat-button>Materias</a>
+          <a class="close"(click)="sidenav.toggle()" href="">Salir</a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+          <a href="#" mat-list-item>Profesores</a>
+          <a href="#" mat-list-item>Materias</a>
+          <a class="close" (click)="sidenav.toggle()" href="" mat-list-item>Salir</a>
+        </mat-nav-list>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  </div>

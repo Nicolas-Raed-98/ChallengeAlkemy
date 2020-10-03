@@ -9,12 +9,15 @@ import { LoginAdminComponent } from './components/login-admin/login-admin.compon
 import { LoginAlumnoComponent } from './components/login-alumno/login-alumno.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OpcionesAdminComponent } from './components/opciones-admin/opciones-admin.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginAdminComponent,
     LoginAlumnoComponent,
-    LoginComponent
+    LoginComponent,
+    OpcionesAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { LoginComponent } from './components/login/login.component';
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
