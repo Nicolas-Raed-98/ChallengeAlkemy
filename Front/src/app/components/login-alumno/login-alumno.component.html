@@ -1,12 +1,12 @@
-      <form class="example-form">
+      <form class="example-form" [formGroup]="alumno" (ngSubmit)="onLogin()">
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="DNI">
+            <input matInput placeholder="DNI" type="text" formControlName="dni" required>
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="N° Legajo">
+            <input matInput placeholder="N° Legajo" type="text" formControlName="legajo" required>
           </mat-form-field>
         </mat-card-content>
-        <button mat-stroked-button color="accent" class="btn-block">Ingresar</button>
+        <button mat-stroked-button type="submit" [disabled]="!alumno.valid" color="accent" class="btn-block">Ingresar</button>
       </form>
