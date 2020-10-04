@@ -16,14 +16,23 @@ export class LoginAdminComponent implements OnInit {
     password: new FormControl('', Validators.required)
   });
   
-  constructor() { }
+  constructor(private loginService: LoginService, private router: Router ) { }
+  
+  errorMessage: string = "";
+  public loginAdminViewModel: LoginAdminViewModel = new LoginAdminViewModel();
 
-  ngOnInit(): void {
+  ngOnInit(){
+    
   }
 
-
-  onLogin(){
-
-  }
+  // onLogin(){
+  //   this.loginService.loginAdmin(this.loginAdminViewModel)
+  //     .subscribe(success =>{
+  //         if(success){
+  //           this.router.navigate(["optionsAdmin"]);
+  //         }
+        
+  //     }, error => this.errorMessage = "Usuario ó contraseña incorrectos.");
+  // }
   }
 

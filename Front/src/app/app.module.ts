@@ -11,13 +11,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OpcionesAdminComponent } from './components/opciones-admin/opciones-admin.component';
+import { OpcionesAlumnoComponent } from './components/opciones-alumno/opciones-alumno.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginAdminComponent,
     LoginAlumnoComponent,
     LoginComponent,
-    OpcionesAdminComponent
+    OpcionesAdminComponent,
+    OpcionesAlumnoComponent
   ],
   imports: [
     BrowserModule,
