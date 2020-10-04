@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpcionesAdminComponent implements OnInit {
 
-  checked = false;
+  
 
   constructor() { }
 
