@@ -12,6 +12,11 @@ import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OpcionesAdminComponent } from './components/opciones-admin/opciones-admin.component';
 import { OpcionesAlumnoComponent } from './components/opciones-alumno/opciones-alumno.component';
+import { TableTeacherComponent } from './components/table-admin/table-admin.component';
+import { TableMateriasComponent } from './components/table-materias/table-materias.component';
+import { MateriasDisponiblesComponent } from './components/materias-disponibles/materias-disponibles.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { MateriasDescripcionComponent } from './components/materias-descripcion/materias-descripcion.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +24,12 @@ import { OpcionesAlumnoComponent } from './components/opciones-alumno/opciones-a
     LoginAlumnoComponent,
     LoginComponent,
     OpcionesAdminComponent,
-    OpcionesAlumnoComponent
+    OpcionesAlumnoComponent,
+    TableTeacherComponent,
+    TableMateriasComponent,
+    MateriasDisponiblesComponent,
+    InicioComponent,
+    MateriasDescripcionComponent
   ],
   imports: [
     BrowserModule,
