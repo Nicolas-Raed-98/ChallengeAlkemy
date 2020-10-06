@@ -1,0 +1,44 @@
+<h1>Gestionar profesores</h1>
+<div class="mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource" matSort>
+     
+       <ng-container matColumnDef="nombre">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Nombre </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <span class="mobile-label">Nombre:</span>
+          {{element.nombre}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="apellido">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Apellido</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <span class="mobile-label">Apellido:</span>
+          {{element.apellido}}
+          </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="dni">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> DNI </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <span class="mobile-label">DNI:</span>
+          {{element.dni}}
+          </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="estado">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Estado </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <span class="mobile-label">Estado:</span>
+            {{element.estado}}
+            </mat-cell>
+      </ng-container>
+
+    
+      <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: columnsToDisplay"></mat-row>
+    
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+ 

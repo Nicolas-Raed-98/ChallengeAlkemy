@@ -7,13 +7,14 @@
         <span>Alkemy</span>
         <span class="menu-spacer"></span>
         <div fxShow="true" fxHide.lt-md>
-          <a href="#" mat-button>Profesores</a>
-          <a href="#" mat-button>Materias</a>
+          <a routerLink="/tableTeacher" mat-button>Profesores</a>
+          <a routerLink="/tableSubjects"mat-button >Materias</a>
           <a class="close"(click)="sidenav.toggle()" href="">Salir</a>
         </div>
       </mat-toolbar-row>
     </mat-toolbar>
-  
+    <div class="table">
+  </div>
     <mat-sidenav-container fxFlexFill>
       <mat-sidenav #sidenav>
         <mat-nav-list>
@@ -24,3 +25,4 @@
       </mat-sidenav>
     </mat-sidenav-container>
   </div>
+  
