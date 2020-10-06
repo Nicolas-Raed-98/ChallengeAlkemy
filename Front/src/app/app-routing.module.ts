@@ -9,6 +9,7 @@ import { OpcionesAlumnoComponent } from './components/opciones-alumno/opciones-a
 import { TableTeacherComponent } from './components/table-admin/table-admin.component';
 import { TableMateriasComponent } from './components/table-materias/table-materias.component';
 import { MateriasDisponiblesComponent } from './components/materias-disponibles/materias-disponibles.component';
+import { MateriasDescripcionComponent } from './components/materias-descripcion/materias-descripcion.component';
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: 'login' },
   { path: "loginAdmin", component: LoginAdminComponent, pathMatch: "full" },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: "optionsStudent", component: OpcionesAlumnoComponent, pathMatch: "full" },
   { path: "tableTeacher", component: TableTeacherComponent, pathMatch: "full" },
   { path: "tableSubjects", component: TableMateriasComponent, pathMatch: "full" },
-  { path: "davailableSubjects", component: MateriasDisponiblesComponent, pathMatch: "full" }
+  { path: "davailableSubjects", component: MateriasDisponiblesComponent, pathMatch: "full" },
+  { path: "subjectDescr", component: MateriasDescripcionComponent, pathMatch: "full" },
   
 ];
 

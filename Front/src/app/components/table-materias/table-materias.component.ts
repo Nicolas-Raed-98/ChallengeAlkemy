@@ -27,24 +27,7 @@ export class TableMateriasComponent implements OnInit {
   
    
   ngOnInit(): void {
-    this.dataSource = new MatTableDataSource<MateriasViewModel>([
-      {nombre : 'Matematicas',
-      horario : '10:30 a 12:30',
-      profesor : 'Nicolas Raed',
-      cupoMax :  '12344'
-      },
-      {nombre : 'Lengua',
-      horario : '10:30 a 12:30',
-      profesor : 'Nicolas Raed',
-      cupoMax : '30'
-      },
-      {nombre : 'Geografia',
-      horario : '10:30 a 12:30',
-      profesor : 'Nicolas Raed',
-      cupoMax : '1230'
-      },
-      
-    ]);
+    this.dataSource = new MatTableDataSource<MateriasViewModel>();
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
