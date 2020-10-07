@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\AlkemyChallenge\\AlkemyChallenge\\AlkemyChallenge\\AlkemyChallenge.csproj",
+      "projectUniqueName": "C:\\Projects\\AlkemyChallenge\\Back\\AlkemyChallenge\\AlkemyChallenge.csproj",
       "projectName": "AlkemyChallenge",
-      "projectPath": "C:\\Projects\\AlkemyChallenge\\AlkemyChallenge\\AlkemyChallenge\\AlkemyChallenge.csproj",
+      "projectPath": "C:\\Projects\\AlkemyChallenge\\Back\\AlkemyChallenge\\AlkemyChallenge.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\AlkemyChallenge\\AlkemyChallenge\\AlkemyChallenge\\obj\\",
+      "outputPath": "C:\\Projects\\AlkemyChallenge\\Back\\AlkemyChallenge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
