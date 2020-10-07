@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MateriasViewModel } from 'src/app/models/materias-view-model';
+import { MateriaViewModel } from 'src/app/models/materia-view-model';
 
 @Component({
   selector: 'app-materias-descripcion',
@@ -9,7 +9,7 @@ import { MateriasViewModel } from 'src/app/models/materias-view-model';
 })
 export class MateriasDescripcionComponent implements OnInit {
 
-  materiaViewModel: MateriasViewModel;
+  materiaViewModel: MateriaViewModel;
 
   constructor(public dialogRef: MatDialogRef<MateriasDescripcionComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {

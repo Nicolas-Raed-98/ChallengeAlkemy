@@ -1,5 +1,5 @@
  import { Component, OnInit, ViewChild } from '@angular/core';
-import { MateriasViewModel } from 'src/app/models/materias-view-model';
+import { MateriaViewModel } from 'src/app/models/materia-view-model';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { SelectionModel } from '@angular/cdk/collections';
@@ -21,13 +21,13 @@ export class TableMateriasComponent implements OnInit {
     'cupomax'];
 
   dataSource: any;
-  selection = new SelectionModel<MateriasViewModel>(true, []);
+  selection = new SelectionModel<MateriaViewModel>(true, []);
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   
    
   ngOnInit(): void {
-    this.dataSource = new MatTableDataSource<MateriasViewModel>();
+    this.dataSource = new MatTableDataSource<MateriaViewModel>();
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }

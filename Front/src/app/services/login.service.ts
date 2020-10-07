@@ -21,19 +21,20 @@ export class LoginService {
   }
 
       
-  // public loginAdmin(loginAdminViewModel: LoginAdminViewModel){
-  //     return this.http.post(this.baseUrl + '', loginAdminViewModel)
-  //     .pipe(map((response => {let tokenInfo = response.json();
-  //       LocalStorageProviderService.authenticationToken = tokenInfo.token;
-  //       return false;
-  //     })));
-  // }
-  // public loginAlumno(loginAlumnoViewModel: LoginAlumnoViewModel){
-  //   return this.http.post(this.baseUrl + '', loginAlumnoViewModel)
-  //   .pipe(map((response => {let tokenInfo = response.json();
-  //     LocalStorageProviderService.authenticationToken = tokenInfo.token;
-  //     return false;
-  //   })));
+  public loginAdmin(loginAdminViewModel: LoginAdminViewModel){
+      return this.http.post(this.baseUrl + '/loginAdministrador', loginAdminViewModel)
+      .pipe(map((response => {let tokenInfo = response.json();
+        LocalStorageProviderService.authenticationToken = tokenInfo.token;
+        return false;
+      })));
+  }
+  public loginAlumno(loginAlumnoViewModel: LoginAlumnoViewModel){
+    return this.http.post(this.baseUrl + '/loginAlumno', loginAlumnoViewModel)
+    .pipe(map((response => {let tokenInfo = response.json();
+      LocalStorageProviderService.authenticationToken = tokenInfo.token;
+      return false;
+    })));
+  }
 }
    
       

@@ -1,6 +1,6 @@
+import { AlumnoViewModel } from './alumno-view-model';
+
 export class LoginAlumnoViewModel {
-    public id : string
-    public dni : string = "";
-    public legajo : string = "";
+    public alumno: AlumnoViewModel
 }
 
