@@ -1,5 +1,5 @@
+import { AdministradorViewModel } from './administrador-view-model';
+
 export class LoginAdminViewModel {
-    public id : string
-    public user : string= "";
-    public password : string = "";
+   public administrador: AdministradorViewModel
 }

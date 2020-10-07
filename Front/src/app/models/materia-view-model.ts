@@ -1,7 +1,7 @@
 import { ProfesorViewModel } from './profesor-view-model'
 
-export class MateriasViewModel {
-    public id : string
+export class MateriaViewModel {
+    public idMateria : number
     public nombre : string
     public horario : string
     public profesor : ProfesorViewModel
