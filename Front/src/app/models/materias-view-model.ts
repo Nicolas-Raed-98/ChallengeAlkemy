@@ -5,4 +5,7 @@ export class MateriasViewModel {
     public horario : string
     public profesor : string
     public cupoMax : string
+    public descripcion : string
+    public programa : string
+    
 }
